@@ -1,0 +1,13 @@
+baseurl = "https://gardner.bickford.nz/"
+theme = "hugo-zen"
+languageCode = "en-us"
+title = "Gardner Bickford"
+author = "gardner"
+copyright = "Gardner Bickford"
+googleanalytics = "UA-12345678-9"
+
+[params]
+  logo      = "/gardner.jpeg"
+  twitter   = "https://twitter.com/gar"
+  github    = "https://github.com/gardner/"
+  email     = "gardner@bickford.nz"
