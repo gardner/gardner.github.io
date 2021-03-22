@@ -345,13 +345,9 @@ function render() {
 
 }
 
-console.log('gardner');
-debugger;
-
 document.addEventListener('readystatechange', event => {
   console.log('readyState', event.target.readyState);
   if (event.target.readyState === "complete") {
-    debugger;
     gardner();
     animate();
   }
