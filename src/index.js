@@ -114,7 +114,7 @@ let positionUniforms;
 let velocityUniforms;
 let birdUniforms;
 
-function init() {
+function gardner() {
 
   container = document.createElement( 'div' );
   document.body.appendChild( container );
@@ -345,9 +345,14 @@ function render() {
 
 }
 
+console.log('gardner');
+debugger;
+
 document.addEventListener('readystatechange', event => {
+  console.log('readyState', event.target.readyState);
   if (event.target.readyState === "complete") {
-    init();
+    debugger;
+    gardner();
     animate();
   }
 });
