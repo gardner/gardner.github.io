@@ -114,9 +114,6 @@ let positionUniforms;
 let velocityUniforms;
 let birdUniforms;
 
-init();
-animate();
-
 function init() {
 
   container = document.createElement( 'div' );
@@ -347,3 +344,11 @@ function render() {
   renderer.render( scene, camera );
 
 }
+
+document.addEventListener('readystatechange', event => {
+  if (event.target.readyState === "complete") {
+    init();
+    animate();
+  }
+});
+
